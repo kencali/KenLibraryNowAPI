@@ -12,4 +12,4 @@ RUN dotnet publish "KenLibraryNowAPI.csproj" -c Release -o /app/out
 FROM base AS final
 WORKDIR /app
 COPY --from=build /app/out . 
-ENTRYPOINT ["dotnet","KenLibraryNowAPI.dll"]S
+ENTRYPOINT ["dotnet","KenLibraryNowAPI.dll"]
